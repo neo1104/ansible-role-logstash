@@ -1,0 +1,13 @@
+---
+# defaults file for roles/logstash
+
+logstash_version: 5.3.2
+logstash_rpm_path: https://artifacts.elastic.co/downloads/logstash/logstash-{{ logstash_version }}.rpm
+
+logstash_conf_dir: /etc/logstash
+logstash_log_dir: /var/log/logstash
+logstash_pipeline_dir: /etc/logstash/conf.d
+
+logstash_log_level: info
+logstash_min_vmsize: 256m
+logstash_max_vmsize: 1g

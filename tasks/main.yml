@@ -1,0 +1,6 @@
+---
+# tasks file for roles/logstash
+- name: include install_logstash.yml
+  include: install_logstash.yml
+- name: include configure_logstash.yml
+  include: configure_logstash.yml

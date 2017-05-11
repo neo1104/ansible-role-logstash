@@ -1,0 +1,28 @@
+---
+- name: copy jvm.options configure file
+  template:
+    src: jvm.options.j2
+    dest: "{{ logstash_conf_dir }}/jvm.options"
+    owner: root
+    mode: 0644
+
+- name: copy logstash.yml configure file
+  template:
+    src: logstash.yml.j2
+    dest: "{{ logstash_conf_dir }}/logstash.yml"
+    owner: root
+    mode: 0644
+
+- name: copy log4j2.properties configure file
+  template:
+    src: log4j2.properties.j2
+    dest: "{{ logstash_conf_dir }}/log4j2.properties"
+    owner: root
+    mode: 0644
+
+- name: copy startup.options configure file
+  template:
+    src: startup.options.j2
+    dest: "{{ logstash_conf_dir }}/startup.options"
+    owner: root
+    mode: 0644

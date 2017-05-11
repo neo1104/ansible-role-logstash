@@ -1,0 +1,6 @@
+---
+- name: download and install logstash
+  yum:
+    name: "{{ logstash_rpm_path }}"
+    state: present
+    update_cache: no
